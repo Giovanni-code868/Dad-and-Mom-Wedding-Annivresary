@@ -48,6 +48,10 @@ body {
   margin-top: 30rem;
 }
 
+#button-preindex:hover{
+background-color: #121212;
+}
+
 /* Button styles for index page */
 .button-index {
   padding: 15px 30px;
@@ -166,3 +170,22 @@ body {
 }
 
 
+/* Button styles */
+#playButton {
+  padding: 15px 30px;
+  background-color: #b87333; /* Pink color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+#playButton:hover {
+  background-color: #121212; /* Lighter pink color on hover */
+}
+
+#playButton:focus {
+  outline: none; /* Remove focus outline */
+}
