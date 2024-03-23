@@ -18,10 +18,29 @@
             <p class="anniversary-font">Join us as we journey through our love story and relive the moments that made our bond stronger. Click below to begin!</p>
         </div>
         <button onclick="location.href='slideshow.html'" class="button-index">Click Me</button>
+        <button id="playButton">Play Music</button>
+        <audio id="backgroundMusic" src="assets/Elvis Presley - Can_t Help Falling in Love (Lyrics)(MP3_160K).mp3" loop></audio>
         <div class="hand-icon">
             <img src="assets/Hand pointer.svg" alt="Hand Icon">
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+     const playButton = document.getElementById('playButton');
+     const backgroundMusic = document.getElementById('backgroundMusic');
+ 
+     playButton.addEventListener('click', function() {
+         if (backgroundMusic.paused) {
+             backgroundMusic.play();
+             playButton.textContent = 'Pause Music';
+         } else {
+             backgroundMusic.pause();
+             playButton.textContent = 'Play Music';
+         }
+     });
+ })
+ </script>
 </body>
 </html>
 
